@@ -16,8 +16,10 @@ const gameSlider = new Swiper('.game__slider', {
   loop: false,
   slidesPerView: 2,
   centeredSlides: true,
+  initialSlide: 1,
+  spaceBetween: 50,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.game__slider-next',
+    prevEl: '.game__slider-prev',
   }
 });
