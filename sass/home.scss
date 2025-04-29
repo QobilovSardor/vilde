@@ -141,5 +141,28 @@
       }
     }
   }
+
+  .swiper-slide {
+    position: relative;
+    width: 50%;
+    opacity: 0.5;
+    transform: scale(0.84);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 0.4285rem;
+  }
+
+  .swiper-backface-hidden .swiper-slide {
+    transform: scale(0.84) translateZ(0);
+  }
+
+  .swiper-slide.swiper-slide-active {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-backface-hidden .swiper-slide.swiper-slide-active {
+    transform: scale(1) translateZ(0) !important;
+  }
 }
 // features
