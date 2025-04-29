@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000080;
+  height: 132px;
+  width: 100%;
+  z-index: 9999;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    &__list {
+      display: flex;
+      gap: 75px;
+    }
+    &__link {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 100%;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+}
