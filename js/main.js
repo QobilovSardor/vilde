@@ -166,6 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 const nav = document.querySelector(".header .nav");
 const openNavBtn = document.querySelector(".open__menu-btn");
 const closeNavBtn = document.querySelector(".menu__close-btn");
