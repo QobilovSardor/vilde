@@ -16,6 +16,10 @@
   gap: 20px;
   width: fit-content;
   white-space: nowrap;
+  transition: transform 0.25s ease; /* animatsiya davomiyligi va yumshoqligi */
+  &:hover {
+    transform: scale(1.05) rotate(2deg); /* biroz kattalashish va engil burilish */
+  }
 }
 
 .icon-btn {
@@ -26,5 +30,8 @@
   justify-content: center;
   background: url(../../images/social-bg.png) no-repeat;
   background-size: 100% 100%;
-
+  transition: transform 0.25s ease; /* animatsiya davomiyligi va yumshoqligi */
+  &:hover {
+    transform: scale(1.05) rotate(2deg); /* biroz kattalashish va engil burilish */
+  }
 }
