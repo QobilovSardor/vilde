@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
   <!-- swiper link -->
@@ -47,15 +50,11 @@
 
       <!-- hero -->
       <section class="intro">
-        <video class="intro__bg" id="8f177b6e-c1ee-4c1d-cd48-8fff83b76278-video" autoplay="" loop=""
-          style="background-image:url(&quot;https://cdn.prod.website-files.com/673db637318f4291c9de22bd%2F6749ceff4063d5243eb421ba_bg_tr_nof_s-poster-00001.jpg&quot;)"
-          muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-          <source
-            src="https://cdn.prod.website-files.com/673db637318f4291c9de22bd%2F6749ceff4063d5243eb421ba_bg_tr_nof_s-transcode.mp4"
-            data-wf-ignore="true">
-          <source
-            src="https://cdn.prod.website-files.com/673db637318f4291c9de22bd%2F6749ceff4063d5243eb421ba_bg_tr_nof_s-transcode.webm"
-            data-wf-ignore="true">
+        <div class="custom-cursor-area"></div>
+        <video class="intro__bg" id="8f177b6e-c1ee-4c1d-cd48-8fff83b76278-video" autoplay loop
+          style="background-image:url('https://cdn.prod.website-files.com/673db637318f4291c9de22bd%2F6749ceff4063d5243eb421ba_bg_tr_nof_s-poster-00001.jpg')"
+          muted playsinline data-wf-ignore="true" data-object-fit="cover">
+          <source src="video/bg-video.mp4" data-wf-ignore="true">
         </video>
         <div class="container">
           <div class="intro__content">
@@ -240,25 +239,27 @@
           </a>
         </div>
 
-        <div class="game__slider swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/game-img-2.png" alt="game img">
+        <div class="game__slider-container">
+          <div class="game__slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/game-img-2.png" alt="game img">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/game-img-1.png" alt="game img">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/game-img-3.png" alt="game img">
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="images/game-img-1.png" alt="game img">
+            <div class="game__slider-btns">
+              <button class="game__slider-prev icon-btn">
+                <img src="images/icon/prev-arrow.svg" alt="prev arrow">
+              </button>
+              <button class="game__slider-next icon-btn">
+                <img src="images/icon/next-arrow.svg" alt="next arrow">
+              </button>
             </div>
-            <div class="swiper-slide">
-              <img src="images/game-img-3.png" alt="game img">
-            </div>
-          </div>
-          <div class="game__slider-btns">
-            <button class="game__slider-prev icon-btn">
-              <img src="images/icon/prev-arrow.svg" alt="prev arrow">
-            </button>
-            <button class="game__slider-next icon-btn">
-              <img src="images/icon/next-arrow.svg" alt="next arrow">
-            </button>
           </div>
         </div>
       </section>
@@ -278,25 +279,52 @@
           </a>
           <img class="footer__monstr" src="images/footer-monstr.png" alt="">
           <div class="social__links">
-            <a class="icon-btn"  href="https://www.reddit.com/r/vilde/">
+            <a class="icon-btn" href="https://www.reddit.com/r/vilde/">
               <img src="images/icon/diskord.svg" alt="">
             </a>
-            <a class="icon-btn"  href="https://www.tiktok.com/@chaotic.mindss">
+            <a class="icon-btn" href="https://www.tiktok.com/@chaotic.mindss">
               <img src="images/icon/tiktok.svg" alt="">
             </a>
-            <a class="icon-btn"  href="https://www.youtube.com/@ChaoticMindsStudio">
+            <a class="icon-btn" href="https://www.youtube.com/@ChaoticMindsStudio">
               <img src="images/icon/youtube.svg" alt="">
             </a>
-            <a class="icon-btn"  href="https://x.com/ChaoticMinds_">
+            <a class="icon-btn" href="https://x.com/ChaoticMinds_">
               <img src="images/icon/x.svg" alt="">
             </a>
-            <a class="icon-btn"  href="https://steamcommunity.com/app/2430470">
+            <a class="icon-btn" href="https://steamcommunity.com/app/2430470">
               <img src="images/icon/steam2.svg" alt="">
             </a>
           </div>
         </div>
+        <div class="footer__bottom">
+          <div class="left__box flex__box">
+            <a href="#!">
+              <img src="images/footer-logo.svg" alt="">
+            </a>
+            <span class="all__right-text">All Rights Reserved | 2025</span>
+          </div>
+          <div class="flex__box">
+            <a class="press__kit" href="#!">Press Kit</a>
+            <div>
+              <span class="all__right-text contact__us">Contact us</span>
+              <a class="press__kit" href="mailto:i.mits@chaoticminds.io">i.mits@chaoticminds.io</a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+  </div>
+
+  <div class="modal">
+    <button class="close__modal" onclick="document.querySelector('.modal').classList.remove('show')">
+    </button>
+    <div class="modal-content">
+      <iframe class="embedly-embed w-lightbox-embed"
+        src="https://www.youtube.com/embed/V0US6OM8soY?si=OIVZWshk5l61toqj&autoplay=1&mute=0" width="940" height="528"
+        scrolling="no" title="YouTube embed" frameborder="0"
+        allow="autoplay; fullscreen; encrypted-media; picture-in-picture;" allowfullscreen="true" mute-1>
+      </iframe>
+    </div>
   </div>
 
   <!-- swiper js -->

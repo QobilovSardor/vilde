@@ -54,8 +54,15 @@
 }
 
 // features
+.features-sec {
+  padding-bottom: 304px;
+  background: url(../images/sections-bg.png) no-repeat;
+  // background-size: contain;
+  background-size: 100% 1935px;
+  background-position: bottom left;
+}
 .features {
-  padding: 120px 0;
+  padding-top: 120px;
 
   &__swiper {
     padding-top: 101px;
@@ -142,6 +149,10 @@
       }
     }
   }
+  .game__slider-container {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
   .game__slider {
     margin-top: 140px;
     position: relative;
@@ -181,11 +192,33 @@
       right: 0;
     }
     &-btns {
-      max-width: 900px;
+      max-width: 1065px;
       margin: 0 auto;
       position: relative;
       z-index: 1;
     }
-}
+  }
 }
 // features
+
+.custom-cursor-area {
+  // cursor: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#custom-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: url(../images/trailer.svg) no-repeat;
+  color: black;
+  z-index: 9999;
+  width: 186px;
+  height: 50px;
+}
