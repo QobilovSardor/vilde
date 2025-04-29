@@ -11,6 +11,14 @@
     align-items: center;
     justify-content: space-between;
   }
+  .menu__close-btn,
+  .open__menu-btn {
+    display: none;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
   .nav {
     &__list {
       display: flex;
@@ -23,5 +31,8 @@
       color: #fff;
       text-transform: uppercase;
     }
+  }
+  .media-block {
+    display: none;
   }
 }
