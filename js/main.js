@@ -56,7 +56,10 @@ const gameSlider = new Swiper('.game__slider', {
 
 document.addEventListener("DOMContentLoaded", () => {
   // Ekran balandligini tekshirish
-  if (window.innerHeight > 1024) {
+  const screenHeight = Math.max(window.innerHeight, window.screen.height);
+
+  if (screenHeight > 1024) {
+
     const introSection = document.querySelector(".intro");
     const introContent = document.querySelector(".intro__content");
     const cursor = document.createElement("div");
