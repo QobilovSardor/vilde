@@ -35,3 +35,10 @@
     transform: scale(1.05) rotate(2deg); /* biroz kattalashish va engil burilish */
   }
 }
+
+.animation-btn {
+  transition: transform 0.25s ease; /* animatsiya davomiyligi va yumshoqligi */
+  &:hover {
+    transform: scale(1.05) rotate(2deg); /* biroz kattalashish va engil burilish */
+  }
+}
