@@ -2,6 +2,7 @@
   background: url(../../images/footer-bg.png) no-repeat;
   background-size: cover;
   padding-bottom: 43px;
+  padding-top: 362px;
   &__top {
     display: flex;
     align-items: end;
@@ -9,7 +10,9 @@
   }
   &__monstr {
     margin-top: -164px;
-    transform: translate(20px, 11px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 11px);
   }
   .social__links,
   .wishlist__now-btn {
