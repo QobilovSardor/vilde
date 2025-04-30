@@ -82,6 +82,8 @@
   &__slide {
     &-img {
       margin-top: -60px;
+      width: 98px;
+      height: 133px;
     }
     &-title {
       font-size: 33.74px;
@@ -91,11 +93,11 @@
       margin: 10px auto 0 auto;
     }
     &-desc {
-      font-weight: 400;
+      font-weight: bolder;
       font-size: 18.74px;
       line-height: 120%;
       text-align: center;
-      max-width: 255px;
+      max-width: 225px;
       margin: 15px auto 0 auto;
       padding: 0 10px;
     }
