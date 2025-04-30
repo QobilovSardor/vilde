@@ -23,7 +23,7 @@ const featuresSwiper = new Swiper('.features__swiper', {
     },
     0: {
       spaceBetween: 10,
-      slidesPerView: 2,
+      slidesPerView: 1.5,
     }
   }
 });
@@ -54,10 +54,33 @@ const gameSlider = new Swiper('.game__slider', {
     }
   }
 });
+
+const nav = document.querySelector(".header .nav");
+const openNavBtn = document.querySelector(".open__menu-btn");
+const closeNavBtn = document.querySelector(".menu__close-btn");
+
+openNavBtn.addEventListener("click", () => {
+  nav.classList.add("show")
+  document.body.style.overflow = 'hidden'
+})
+closeNavBtn.addEventListener("click", () => {
+  nav.classList.remove("show");
+  document.body.style.overflow = ''
+})
+
+// =================================================================================================================================
+// =================================================================================================================================
+// =================================================================================================================================
+// =================================================================================================================================
+// =================================================================================================================================
+// =================================================================================================================================
+
+
 const introSection = document.querySelector(".intro");
 const introContent = document.querySelector(".intro__content");
 const cursor = document.createElement("div");
 cursor.id = "custom-cursor";
+cursor.style.display = "none"; // <-- Bu qatorni qo‘sh
 document.body.appendChild(cursor);
 
 // Kursor faqat 1024px va undan katta ekranlarda ishlaydi
@@ -90,11 +113,19 @@ introSection.addEventListener("mouseleave", () => {
   }
 });
 
+// introSection.addEventListener("mouseenter", (e) => {
+//   if (isCursorActive && !introContent.contains(e.target)) {
+//     cursor.style.display = "flex";
+//   }
+// });
 introSection.addEventListener("mouseenter", (e) => {
   if (isCursorActive && !introContent.contains(e.target)) {
     cursor.style.display = "flex";
+  } else {
+    cursor.style.display = "none";
   }
 });
+
 
 // ==== Modal video qismi ====
 const modal = document.querySelector(".modal");
@@ -171,16 +202,3 @@ document.addEventListener("visibilitychange", () => {
     stopVideo();
   }
 });
-
-const nav = document.querySelector(".header .nav");
-const openNavBtn = document.querySelector(".open__menu-btn");
-const closeNavBtn = document.querySelector(".menu__close-btn");
-
-openNavBtn.addEventListener("click", () => {
-  nav.classList.add("show")
-  document.body.style.overflow = 'hidden'
-})
-closeNavBtn.addEventListener("click", () => {
-  nav.classList.remove("show");
-  document.body.style.overflow = ''
-})
