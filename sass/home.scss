@@ -86,10 +86,17 @@
       height: 133px;
     }
     &-title {
+      // font-size: 33.74px;
+      // line-height: 100%;
+      // text-align: center;
+      margin: 10px auto 0 auto;
+
+      font-weight: 400;
       font-size: 33.74px;
       line-height: 100%;
+      letter-spacing: 0%;
       text-align: center;
-      margin: 10px auto 0 auto;
+      vertical-align: middle;
     }
     &-desc {
       font-size: 18.74px;
