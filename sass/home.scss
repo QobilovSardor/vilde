@@ -82,12 +82,12 @@
   &__slide {
     &-img {
       margin-top: -60px;
-      width: 98px;
-      height: 133px;
+      width: auto;
+      height: 130px;
 
       &.first {
         width: auto;
-        height: 130px;
+        height: 135px;
       }
     }
     &-title {
