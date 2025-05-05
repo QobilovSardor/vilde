@@ -1,16 +1,16 @@
 // @font-face {
 //   font-family: 'Regular';
-//   src: url(../../fonts/norse/Norse.otf);
+//   src: url(../fonts/norse/Norse.otf);
 //   font-weight: normal;
 // }
 // @font-face {
 //   font-family: 'Regular';
-//   src: url(../../fonts/norse/Norse-Bold.otf);
+//   src: url(../fonts/norse/Norse-Bold.otf);
 //   font-weight: bold;
 // }
 @font-face {
   font-family: 'Regular';
-  src: url(../../fonts/Huntress-Regular-2025-1.6.ttf);
+  src: url(../fonts/Huntress-Regular-2025-1.6.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -80,5 +80,4 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   backdrop-filter: blur(1.5px);
-  font-weight: bold;
 }
